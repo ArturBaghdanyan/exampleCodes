@@ -1,0 +1,13 @@
+.container {
+  @apply flex flex-col;
+
+  .row {
+    @apply w-24 h-12 bg-green-400 border-2;
+    .element {
+      @apply flex;
+    }
+  }
+  .data {
+    @apply flex flex-col text-justify w-4/5 flex-wrap;
+  }
+}

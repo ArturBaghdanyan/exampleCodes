@@ -1,0 +1,7 @@
+.post {
+  @apply w-24 h-12 bg-green-400 border-2;
+
+  > button {
+    @apply flex justify-center self-center m-auto;
+  }
+}
