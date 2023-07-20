@@ -1,0 +1,25 @@
+object clone...
+let user = {
+  name: "John",
+  age: 30,
+};
+let clone = {};
+
+for (let key in user) {
+  clone[key] = user[key];
+}
+clone.name = "Pete";
+
+replace array with object...
+example_1..
+const arr = ["kraft", "jacy"];
+const obj = Object.assign({}, arr);
+console.log(obj);
+
+example_2..
+const arr = ["kraft", "jacy"];
+const obj = {
+  name: arr[0],
+  otherName: arr[1],
+};
+console.log(obj);

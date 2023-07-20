@@ -1,0 +1,21 @@
+<div class="arrow">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+
+.arrow {
+    display: flex;
+    justify-content: space-around;
+}
+.left,.right {
+    border: 20px solid transparent;
+    display: inline-flex;
+}
+.left {
+    border-right: 20px solid red;
+    border-left: none;
+}
+.right {
+    border-left: 20px solid red;
+    border-right: none;
+}

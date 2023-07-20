@@ -1,0 +1,51 @@
+<html>
+   <div class="contain">
+      <img src="https://picsum.photos/200/300" alt="">
+   </div>
+</html>
+
+<style>
+.contain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+}
+ img {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    object-fit: cover;
+}
+</style>
+
+<html>
+    <div class="wrapper-outer">
+        <div class="wrapper">afafas</div>
+        <div class="footer">sdvsdds</div>
+    </div>
+</html>
+
+<style>
+.wrapper-outer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    border: 1px solid black;
+}
+.wrapper {
+    color: white;
+    background: red;
+    flex-grow: 1;
+}
+.footer {
+    background: blue;
+    width: 100%;
+    color: white;
+    margin-top: auto;
+}
+</style>
