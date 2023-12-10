@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import logo from "../../logo.svg"
+import logo from "../../logo.svg";
+
 interface Sculpture {
   name: string;
   artist: string;

@@ -1,4 +1,3 @@
-
 for....
 let result = 0;
 const arr = [2, 3, 4, 5];
