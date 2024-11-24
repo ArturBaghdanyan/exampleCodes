@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-around;
 }
-.left,.right {
+.left, .right {
     border: 20px solid transparent;
     display: inline-flex;
 }

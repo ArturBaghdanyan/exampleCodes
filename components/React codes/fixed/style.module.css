@@ -1,0 +1,11 @@
+.root {
+    width: 100%;
+    position: relative;
+    inset: 0;
+    z-index: 20;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+.sticky {
+     position: fixed;
+     background: white;
+}
