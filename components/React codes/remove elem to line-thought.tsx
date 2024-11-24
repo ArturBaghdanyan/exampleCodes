@@ -30,28 +30,28 @@ function TodoList() {
   };
 
   return (
-    <div>
-      <ul>
-        {todos.map(todo => (
-          <li
-            key={todo.id}
-            className={todo.isDone ? 'done' : ''}
-            onClick={() => handleItemClick(todo.id, todo.text)}
-          >
-            {wordToRemove && todo.text.includes(wordToRemove) ? (
-              <span style={{ 
-                textDecoration: 'line-through' }} 
-                onClick={() => handleRemoveClick(todo.id)}
-                >
-                    {wordToRemove}
-               </span>
-            ) : (
-              todo.text
-            )}
-          </li>
-        ))}
-      </ul>
-    </div>
+  <div>
+    <ul>
+      {todos.map(todo => (
+        <li
+          key={todo.id}
+          className={todo.isDone ? 'done' : ''}
+          onClick={() => handleItemClick(todo.id, todo.text)}
+        >
+          {wordToRemove && todo.text.includes(wordToRemove) ? (
+            <span style={{ 
+              textDecoration: 'line-through' }} 
+              onClick={() => handleRemoveClick(todo.id)}
+              >
+                {wordToRemove}
+              </span>
+          ) : (
+            todo.text
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
   );
 }
 

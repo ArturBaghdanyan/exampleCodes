@@ -1,4 +1,4 @@
-for....
+//for....
 let result = 0;
 const arr = [2, 3, 4, 5];
 for(let i = 0; i < arr.length; i++) {
@@ -6,7 +6,7 @@ result += arr[i];
 }
 console.log(result); //14
 
-example1..
+//example1..
 let arr = [2,45,64,2];
 let text = 1;
 for( let i = 0; i < arr.length; i++) {
@@ -14,7 +14,7 @@ text *= arr[i];
 }
 console.log(text);
 
-example2
+//example2
 let arr = [-2,5,-9,15,0,-4];
 let sum = 0;
      for(let i = 0; i < arr.length; i++) {
@@ -24,13 +24,14 @@ let sum = 0;
 }
 console.log(sum);
 
-forEach....
+//forEach....
  let arr = ["John", "Mike", "Andry", "Shenon"];
 arr.forEach((item, index) => {
    
     console.log(`${index}: ${item}` + "<br>");
 })
 
+//
 let arr = ['BMW', 'Mercedes', 'Volkswagen', 'Toyota'];
 arr.forEach((item, index) => {
     if (item === 'Toyota') {
@@ -39,7 +40,7 @@ arr.forEach((item, index) => {
 })
 console.log(arr);
   
- 
+// 
 let arr = [1,5,67,73,54];
  arr.forEach(function(item) {
      if(item > 10) {
@@ -47,6 +48,7 @@ let arr = [1,5,67,73,54];
       }
  })
 
+ //
 const arr = [1,2,6,54,7,9,0];
   let result = 0;
   let Array = arr.forEach(function(item) {
@@ -54,16 +56,7 @@ const arr = [1,2,6,54,7,9,0];
      console.log(result + "<br>")
   })
 
-Filter....
-
-let array = ["banana","mango", "apple"]
-
-let filtered = array.filter((value) => {
-  array.push(array[0]);
-  array.push(array[1]);
-  array.push(array[2]);
-});
-
+//sort
 let arr = [-2,5,-9,15,0,-4];
 
 arr.sort(function(a, b) {
@@ -71,6 +64,16 @@ arr.sort(function(a, b) {
 });
 console.log(arr);
 
+//Filter....
+
+let array = ["banana","mango", "apple"]
+let filtered = array.filter((value) => {
+  array.push(array[0]);
+  array.push(array[1]);
+  array.push(array[2]);
+});
+
+//
 let ages = [23,45,72,48];
 let result = ages.filter((item) => {
      if(item > 27) {
@@ -79,44 +82,47 @@ let result = ages.filter((item) => {
  });
  console.log(result);
 
+// 
 let arr = [-1,2,5,-6,8,-34];
-
   function func(elem) {
     return elem < 0;
 }
   let newArr = arr.filter(func);
   console.log(newArr);
 
-
-1.const arr = [1,2,6,89,3,7,0,2,7,0,3];
+//
+const arr = [1,2,6,89,3,7,0,2,7,0,3];
     let result = arr.filter(item => {
         return item % 2 == 0;
   })
   console.log(result);
 
-2. const arr = [1,2,6,89,3,7,0,2,7,0,3];
-   let result = arr.filter(item => item % 2 == 0);
-  console.log(result);
- 
+//
+const arr = [1,2,6,89,3,7,0,2,7,0,3];
+let result = arr.filter(item => item % 2 == 0);
+console.log(result);
+
+//
 let arr = ["askjhfa","asa","adgvgaa","afvaa", "asdjfd"];
 let filteredArr = arr.filter(item => {	 
-   if(item.length > 5 && item.charAt(1) == "s") {
-        return item;
-    }
- })
-    console.log(filteredArr);
+	if(item.length > 5 && item.charAt(1) == "s") {
+		return item;
+	}
+})
+console.log(filteredArr);
 
-  const arr = [
-       {fn: "Joe", ln: "Mikaelyan", ph: "039 323 233", gender: "male" },
-       {fn: "Mike", ln: "Hovsepyan", ph: "039 323 233", gender: "male" },
-       {fn: "Jane", ln: "Karapetyan", ph: "039 323 233", gender: "female" },
-       {fn: "Jill", ln: "Isahakyan", ph: "039 323 233", gender: "female" }
-    ]
+//
+const arr = [
+	{fn: "Joe", ln: "Mikaelyan", ph: "039 323 233", gender: "male" },
+	{fn: "Mike", ln: "Hovsepyan", ph: "039 323 233", gender: "male" },
+	{fn: "Jane", ln: "Karapetyan", ph: "039 323 233", gender: "female" },
+	{fn: "Jill", ln: "Isahakyan", ph: "039 323 233", gender: "female" }
+]
     
- function myFunction(arr) {
-      return arr.filter(function(param) {
-             return param.gender === "female"; 
-    })
+function myFunction(arr) {
+	return arr.filter(function(param) {
+		return param.gender === "female"; 
+})
 }
  
   document.write(JSON.stringify(myFunction ([
@@ -126,7 +132,7 @@ let filteredArr = arr.filter(item => {
    {fn: "Jill", ln: "Isahakyan", ph: "039 323 233", gender: "female" }
   ])));
 
-Map...
+//Map...
 
 const users = [1,4,5,6]
 const usersPlusOne = users.map(n => n + 1);
@@ -147,7 +153,7 @@ let map = new Map(obj1)
     document.write(val,key)
   })
 
-map.set..
+//map.set..
 
 let john = {name: "John"}
 let pete = {name: "Pete"}
@@ -167,7 +173,7 @@ const student = {
   	
   console.log(entries.firstName);
 
-setter,getter...
+//setter,getter...
 
 const student = {
   firstName: "Babken",
@@ -185,23 +191,22 @@ const student = {
   student.fullName = "Ivan Vach"
   document.write(student.fullName);
 
-duplicate...
-example1..
+//duplicate...
+
 let arr = [1, 2, 2, 3, 2, 3, 4, 5, 4, 1, 4, 5];
 let duplicate = arr.filter((item, index) => {
       return arr.indexOf(item) == index;
 });
 console.log(duplicate);
 
-example2...
+//
 let arr = [1, 2, 2, 3, 2, 3, 4, 5, 4, 1, 4, 5];
 let duplicate = [...new Set(arr)]
 
 console.log(duplicate);
 
-slice...
+//slice...
 
-example1..
  function myFunction(a) {
  return a.slice(2, 5); // վերձնում է զանգվածի 2-րդ ինդեքսից,  5-րդ էլեմենտը։
 }
@@ -209,24 +214,36 @@ const myArray = [1, 2, 3, 4, 5, 6];
 const result = myFunction(myArray);
 console.log(result);  // [3, 4, 5]
 
-example2..
-const array = [1,3,5,67,87,98,8,9,8];
+//
+const numbers = [1,3,5,67,87,98,8,9,8];
 
 const count = (a) => {
 	return a.slice(3, 6);
 }
-const result = count(array);
+const result = count(numbers);
 console.log(result); // [67, 87, 98]
 
-negative element...
-example1..
+//negative element...
 let a = [1,2,-4,-5,3];
 for(let i = 0; i < a.length; i++) {
      if (a[i] < 0) {
         console.log(a[i])
     }
 }  // -4,-5
-example 2....
-let a = [1,2,-4,-5,3]
-let result = a.filter((el) => el < 0).length
-console.log(result) // 2 hat
+
+//
+let numbers = [1,2,-4,-5,3]
+let negativeNumbers = numbers.filter((el) => el < 0).length
+console.log(negativeNumbers) // 2 hat
+
+//reduce().....
+let todos = [
+     {price: 10, label: "UIN/FN"},
+     {price: 140, label: "Employer Name"},
+     {price: 5, label: "Employer Address"},
+     {price: 15, label: "Phone number"}
+    ]
+let totalPrice = todos.reduce((total, item) => {
+    return total + item.price;
+  }, 0)
+console.log(totalPrice);
