@@ -8,13 +8,9 @@ import menu_white from './icons/menu_white.svg';
 
 import style from './styles.module.scss';
 
-const Header = ({ isHeaderFixed }) => {
-  const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);
-
-  function handleClick() {
-    setIsMobileMenuOpened(!isMobileMenuOpened);
-  }
-
+const Header = () => {
+  const [isHeaderFixed, setIsHeaderFixed] = useState(false);
+  
   const showElement = isHeaderFixed ? (
     <img src={menu_black} alt="menu" />
   ) : (
@@ -55,23 +51,6 @@ const Header = ({ isHeaderFixed }) => {
           </div>
         </div>
       </div>
-
-      {isMobileMenuOpened && (
-        <div className={`${style.mobile_menu} container_spacing`}>
-          <div className={style.title}>
-            <img src={logo_colored} alt="guardian" />
-            <button onClick={handleClick}>
-              <img src={close} alt="close" />
-            </button>
-          </div>
-          <ul className={style.header_nav}>
-            <li>Home</li>
-            <li>Property Fraud</li>
-            <li>FAQ</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-      )}
     </>
   );
 };

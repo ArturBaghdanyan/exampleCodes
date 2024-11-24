@@ -9,3 +9,54 @@
      position: fixed;
      background: white;
 }
+
+.header {
+    @apply flex justify-between items-center p-6;
+    .header_icon {
+      @apply text-white;
+    }
+    .nav {
+      @apply hidden lg:text-white lg:flex lg:items-center lg:mx-auto lg:gap-x-6;
+      > p {
+        @apply lg:border-b-2;
+      }
+    }
+    .scroll_nav {
+      @apply text-[#AAAEC1];
+      :first-child {
+        @apply text-[#4E4E4E];
+      }
+    }
+    .header_menu {
+      @apply flex items-center text-white justify-end gap-x-9;
+      .header_registration {
+        @apply flex justify-between items-center gap-x-5;
+        .sign_in {
+          @apply hidden md:block;
+        }
+        .scroll_sign_in {
+          @apply md:text-[#4E4E4E] md:block;
+        }
+        .register {
+          @apply hidden md:block md:w-20 md:h-9 md:bg-white md:text-black
+          md:rounded-full md:flex md:items-center md:justify-center;
+        }
+        .scroll_register {
+          @apply md:rounded-full md:bg-[#0BAEB9] md:text-white md:flex md:items-center;
+        }
+      }
+
+      button {
+        @apply flex flex-col items-end h-full;
+        > nav {
+          @apply flex flex-col text-white items-center cursor-pointer bg-gray-400 gap-y-4 lg:hidden;
+        }
+      }
+      .scroll_menu {
+        @apply md:hidden;
+        > img {
+          @apply w-6 h-6;
+        }
+      }
+    }
+  }
